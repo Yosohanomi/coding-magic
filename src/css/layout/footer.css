@@ -3,8 +3,8 @@ footer {
     background-color: #FFF;
     width: 100vw;
 }
-.logo {
-}
+/* .logo {
+} */
 .footer__elements {
     display: flex;
     gap: 187px;
