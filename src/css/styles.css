@@ -12,6 +12,7 @@
 @import url('./base/common.css');
 
 /* layout */
+@import url('./layout/football.css');
 @import url('./layout/scientists.css');
 @import url('./layout/calculator.css');
 @import url('./layout/footer.css');
