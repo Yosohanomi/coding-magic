@@ -34,6 +34,8 @@ footer {
 .footer__input {
     color: #7E7E7E;
     font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
     border: none;
     padding: 10px 80px 10px 10px;
     border-radius: 20px;
@@ -53,6 +55,8 @@ footer {
     color: #FFF;
     font-size: 12px;
     padding: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
     border: none;
     border-radius: 20px;
     background: #000;
