@@ -1,13 +1,20 @@
 footer {
-    border: 1px solid red;
     background-color: #FFF;
-    width: 100vw;
 }
-/* .logo {
-} */
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 165px;
+    height: 70px;
+    margin-right: 185px;
+}
 .footer__elements {
     display: flex;
-    gap: 187px;
+    gap: 140px;
 }
 .footer__contacts {
     display: flex;
