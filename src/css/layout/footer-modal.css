@@ -11,8 +11,6 @@
     pointer-events: none;
     transition: opacity 300ms linear;
 }
-/* .active {
-} */
 
 .modal__footer__backdrop.active {
     opacity: 1;
@@ -25,7 +23,7 @@
     z-index: 12;
     position: fixed;
     top: 30%;
-    left: 35%;
+    left:33%;
     transform: (-50%, -50%);
     border-radius: 20px;
     background: #FFF;
@@ -54,4 +52,27 @@
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+
+.modal__footer-img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__first-img {
+    top: 69px;
+    left: 43px;
+}
+.footer__second-img {
+    top: 69px;
+    right: 42px;
+}
+.footer__third-img {
+    top: 145px;
+    left: 87px;
+}
+.footer__fourth-img {
+    top: 145px;
+    right: 86px;
 }
