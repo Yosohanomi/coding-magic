@@ -1,21 +1,43 @@
 <header class="header">
-      <div class="container">
-    <nav class="header__nav"> 
-            <a href="index.html" class="logo__link">
-        <svg class="logo__header">
-            <use href="/img/svg/symbol-defs.svg#icon-Group-128-1"></use>
-        </svg>
-        </a>
-        <ul class="header__nav__list">
-            <li class="header__nav__item"><a class="header__nav__link" href="">Інтерактив</a></li>
-            <li class="header__nav__item"><a class="header__nav__link" href="">Наша команда</a></li>
-            <li class="header__nav__item"><a class="header__nav__link" href="">Контакти</a></li>
-        </ul>    
-            </nav>
-             <div class="theme__div"></div>
-            <button class="header__button">%</button>
-        <p class="header__text" type="button">Вітаємо, User!</p> 
-
-    </button>
-    </div>
-    </header>
+  <div class="container">
+    <a href="index.html" class="logo__link">
+      <svg class="logo__header">
+        <use href="/img/svg/symbol-defs.svg##icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav_list">
+        <li class="header__nav__item">
+          <a class="header__nav__item__link" href="">
+            Інтерактив
+            <svg class="header__nav__item__link__icon">
+              <use href="/img/svg/header/symbol-defs.svg##icon-arrow"></use>
+            </svg>
+          </a>
+          <ul
+            class="header__nav__item__submenu"
+            id="header-submenu-filter-list"
+          >
+            <li id="numerical" class="header__nav__item__submenu__item">
+              Числовий
+            </li>
+            <li id="game" class="header__nav__item__submenu__item">Ігровий</li>
+            <li id="acquaintance" class="header__nav__item__submenu__item">
+              Ознайомчий
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav__item">
+          <a class="header__nav__item__link" href="">Наша команда</a>
+        </li>
+        <li class="header__nav__item">
+          <a class="header__nav__item__link" href="">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <img class="switch-icon" src="/img/svg/header/white.svg" alt="#" />
+    <p class="header__text">
+      Вітаємо, <span class="header__username">User</span>!
+    </p>
+  </div>
+</header>
