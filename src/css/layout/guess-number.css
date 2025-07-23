@@ -1,0 +1,37 @@
+.guess-number__title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Montserrat Alternates-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.guess-number__number {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 45px 10px 10px;
+    position: relative;
+    background-color: #d6d6d6;
+    border-radius: 20px;
+}
+
+.guess-number__img {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+}
+
+.guess-number__answer {
+    position: fixed;
+    width: 221px;
+    height: 11px;
+    top: 0;
+    left: 0;
+}
