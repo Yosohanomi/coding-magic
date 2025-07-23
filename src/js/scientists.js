@@ -1,0 +1,1 @@
+const scientists = document.querySelector('#scientists-list')
