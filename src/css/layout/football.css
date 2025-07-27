@@ -1,3 +1,11 @@
+@keyframes bounce {
+    0%   { transform: scale(1) translateY(0); }
+    30%  { transform: scale(1.1, 0.9) translateY(-15px); }
+    60%  { transform: scale(0.95, 1.05) translateY(5px); }
+    100% { transform: scale(1) translateY(0); }
+  }
+
+
 .football .container {
     display: flex;
     align-items: center;
@@ -10,6 +18,7 @@
     margin-top: 36px;
 }
 .football__pitch {
+    position: relative;
     width: 720px;
     height: 220px;
     border-radius: 37px;
@@ -17,7 +26,12 @@
     background: #5ABB58;
     margin-bottom: 36px;
     cursor: url('/img/vector.png'), auto;
+    overflow: hidden;
 }
-.football__img {
 
+.football__img {
+    position: absolute;
+    transition: top 0.4s ease, left 0.4s ease;
+    top: 50%;
+    left: 50%;
 }

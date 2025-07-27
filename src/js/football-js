@@ -1,9 +1,0 @@
-const footballPitch = document.querySelector('#football-pitch');
-const ball = document.querySelector('#ball');
-
-footballPitch.addEventListener('click', checkPosition);
-function checkPosition (event) {
-    console.log(event.clientX);
-}
-
-console.log('hello');
