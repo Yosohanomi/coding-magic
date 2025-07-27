@@ -1,52 +1,88 @@
 .header {
+  padding: 21px 0;
+  font-size: 12px;
+  font-weight: 400px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
-
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 20px;
 }
-
-.header__nav {
-    display: flex;
-    align-items: center;
-}
-
 .logo__link {
+    margin-right: 80px;
 }
-
-.logo {
-}
-
-.header__button {
-
-}
-
 .logo__header {
-       width: 165px;
-    height: 70px;
-    margin-right: 85px;
+  width: 93px;
+  height: 38px;
+  fill: var(--secondary-color);
 }
-.header__nav__list {
-    display: flex;
-    gap: 50px;
-
+.header__nav {
+  margin-right: 360px;
 }
-
-.header__button {
-width: 40px;
-height: 20px;
-border-radius: 11px;
-background: #7A7A7A;
+.header__nav_list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
-
 .header__nav__item {
+  text-align: center;
+}
+.header__nav__item__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__nav__item__link__icon {
+  width: 12px;
+  height: 16px;
+  fill: var(--secondary-color);
+  transition: all 400ms linear;
 }
 
-.header__nav__link {
+.header__nav__item:first-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+.header__nav__item:first-child:hover .header__nav__item__submenu{
+  opacity: 1;  
+visibility: visible;
+pointer-events: auto;
+}
+
+.header__nav__item:first-child:hover .header__nav__item__link__icon{
+transform: rotate(180deg);
+}
+
+.header__nav__item__submenu {
+  position: absolute;
+  top: 100%;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: 0;
+  transition: opacity 350ms linear;
+}
+
+.header__nav__item__submenu__item {
+padding: 10px 40px;
+}
+
+.header__nav__item__submenu__item:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.switch-icon {
+    margin-right: 50px;
+    cursor: pointer;
+}
 .header__text {
+}
+.header__username {
 }

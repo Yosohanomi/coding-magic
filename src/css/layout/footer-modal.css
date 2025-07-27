@@ -26,7 +26,7 @@
     left:33%;
     transform: (-50%, -50%);
     border-radius: 20px;
-    background: #FFF;
+    background: var(--primary-color);
     padding: 20px;
 }
 .close__button {
@@ -47,7 +47,7 @@
     position: absolute;
     top: 83px;
     right: 158px;
-    color: #000;
+    color: var(--secondary-color);
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
