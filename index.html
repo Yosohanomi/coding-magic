@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
     
-  <script type="module" crossorigin src="/coding-magic/assets/index-95e0a40c.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-0496ce1e.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-400e8481.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-d8360469.css">
 </head>
 
 <body>
@@ -94,11 +94,11 @@ height: 15px>
   <div class="container">
     <hr>
     <h2 class="scientists__title">Обери вченого/их</h2>
-    <ul class="scientists__list">
-      <li class="scientists__item">
+    <ul class="scientists__list" id="scientists-list">
+      <!-- <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/albert-5a628621.jpg"
+            src="img/scientists/albert.jpg"
             alt="albert"
             class="scientists__card"
           />
@@ -108,7 +108,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/newton-9aba23b8.jpg"
+            src="img/scientists/newton.jpg"
             alt="newton"
             class="scientists__card"
           />
@@ -118,7 +118,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/galilei-3a59d1dd.jpg"
+            src="img/scientists/galilei.jpg"
             alt="galilei"
             class="scientists__card"
           />
@@ -128,7 +128,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/curie-84df12d3.jpg"
+            src="img/scientists/curie.jpg"
             alt="curie"
             class="scientists__card"
           />
@@ -138,7 +138,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/kepler-b7eac13a.jpg"
+            src="img/scientists/kepler.jpg"
             alt="kepler"
             class="scientists__card"
           />
@@ -148,7 +148,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/copernicus-ca802d54.jpg"
+            src="img/scientists/copernicus.jpg"
             alt="copernicus"
             class="scientists__card"
           />
@@ -160,7 +160,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/planck-61d610cd.jpg"
+            src="img/scientists/planck.jpg"
             alt="planck"
             class="scientists__card"
           />
@@ -170,7 +170,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/blodgett-586eafd9.jpg"
+            src="img/scientists/blodgett.jpg"
             alt="blodgett"
             class="scientists__card"
           />
@@ -182,7 +182,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/lovelace-8dcd324d.jpg"
+            src="img/scientists/lovelace.jpg"
             alt="lovelace"
             class="scientists__card"
           />
@@ -192,7 +192,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/goode-e6f6c666.jpg"
+            src="img/scientists/goode.jpg"
             alt="goode"
             class="scientists__card"
           />
@@ -202,7 +202,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/meitner-9929c964.jpg"
+            src="img/scientists/meitner.jpg"
             alt="meitner"
             class="scientists__card"
           />
@@ -212,7 +212,7 @@ height: 15px>
       <li class="scientists__item">
         <div class="scientists__item-wrapper">
           <img
-            src="/coding-magic/assets/hanna-4d03b350.jpg"
+            src="img/scientists/hanna.jpg"
             alt="hanna"
             class="scientists__card"
           />
@@ -220,60 +220,56 @@ height: 15px>
             Hanna Hammarström <br />1829-1909
           </p>
         </div>
-      </li>
+      </li> -->
     </ul>
 
-    <ul class="scientists__list-btn">
-        <div class="scientists__first-elements">
+    <ul class="scientists__list-btn" id="scientists-list-btn">
             <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="nineteen-century">
                   Які вчені народилися в 19 ст.
                 </button>
               </li>
               <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="alphabet">
                   Відсортувати вчених за алфавітом
                 </button>
               </li>
               <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="liven-years">
                   Відсортувати вчених за кількістю прожитих років
                 </button>
               </li>
               <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="latest-born">
                   Знайти вченого, який народився найпізніше
                 </button>
               </li>
-        </div>
 
-        <div class="scientists__second-elements">
             <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="albert-year">
                   Знайти рік народження Albert Einshtein
                 </button>
               </li>
               
               <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="start-C">
                   Знайти вчених, прізвища яких починаються на на літеру “С”
                 </button>
               </li>
               <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="start-A">
                   Видалити всіх вчених, ім’я яких починається на “А”
                 </button>
               </li>
               
               <li class="scientists__item-btn">
-                <button class="scientists__btn" type="button">
+                <button class="scientists__btn" type="button" id="longest-shortest">
                   Знайти вченого, який прожив найдовше і вченого, <br> який прожив найменше
                 </button>
               </li>
-        </div>
       
       <li class="scientists__item-btn">
-        <button class="scientists__btn" type="button">
+        <button class="scientists__btn" type="button" id="same-letter">
           Знайти вчених, в яких співпадають перші літери імені і прізвища
         </button>
       </li>
