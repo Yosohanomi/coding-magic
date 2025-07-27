@@ -1,37 +1,53 @@
 .guess-number__title {
-    position: fixed;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat Alternates-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.guess-number__number {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px 45px 10px 10px;
-    position: relative;
-    background-color: #d6d6d6;
-    border-radius: 20px;
+.guess-number__form {
+    display: flex;
+    width: 150px;
+    height: 35px;
+}
+
+.guess-number__input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+}
+
+.guess-number__btn {
+    background-color: #444;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.guess-number__btn:hover {
+    background-color: #222;
 }
 
 .guess-number__img {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    top: 0;
-    left: 0;
+    width: 15px;
+    height: 15px;
+    filter: invert(1);
 }
 
-.guess-number__answer {
-    position: fixed;
-    width: 221px;
-    height: 11px;
-    top: 0;
-    left: 0;
+.guess-number__good-answer {
+    color: green;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.guess-number__bad-answer {
+    color: red;
+    font-size: 18px;
+    margin-top: 15px;
 }
