@@ -1,6 +1,7 @@
 import './js/header'
 import './js/check-year'
 import './js/calculator'
+import './js/football'
 import './js/scientists'
 import './js/footer-modal'
 import './js/footer-modal'
