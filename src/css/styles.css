@@ -21,6 +21,8 @@
 @import url('./layout/footer-modal.css');
 @import url('./layout/footer.css');
 @import url('./layout/guess-number.css');
+@import url('./layout/calculator.css');
+@import url('./layout/stone.css');
 :root {
   --primary-color: #FFF;
   --secondary-color: #000;
@@ -37,6 +39,6 @@
 }
 
 .dark-theme {
-    --primary-color: #000;
-    --secondary-color: #FFF;
+    --primary-color: #FFF;
+    --secondary-color: #000;
 }
