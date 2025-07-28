@@ -18,4 +18,5 @@ function onBtnClick(e) {
         result.textContent = 'Будь ласках введіть коректний рік.';
         result.classList.add('leap-error');
     }
+    
 }   
