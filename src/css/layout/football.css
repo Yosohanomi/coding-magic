@@ -5,17 +5,18 @@
     100% { transform: scale(1) translateY(0); }
   }
 
-
-.football .container {
+.football {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .football__title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 36px;
+    color: var(--secondary-color);
+    margin: 36px 0px;
 }
 .football__pitch {
     position: relative;

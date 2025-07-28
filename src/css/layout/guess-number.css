@@ -1,3 +1,9 @@
+.guess-number {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .guess-number__title {
     font-size: 24px;
     font-weight: 600;
@@ -26,7 +32,7 @@
     border-radius: 0 25px 25px 0;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background-color 0.3s linear;
 }
 
 .guess-number__btn:hover {
