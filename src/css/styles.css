@@ -22,7 +22,6 @@
 @import url('./layout/footer.css');
 @import url('./layout/guess-number.css');
 :root {
-feature/header
   --primary-color: #FFF;
   --secondary-color: #000;
     font-family: "Montserrat Alternates", sans-serif;
@@ -38,7 +37,6 @@ feature/header
 }
 
 .dark-theme {
-    --primary-color: #FFF;
-    --secondary-color: #000;
-main
+    --primary-color: #000;
+    --secondary-color: #FFF;
 }
