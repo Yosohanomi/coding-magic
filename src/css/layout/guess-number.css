@@ -39,15 +39,8 @@
     filter: invert(1);
 }
 
-.guess-number__good-answer {
-    color: green;
+.guess-number__result {
     font-size: 18px;
-    margin-top: 15px;
-}
-
-
-.guess-number__bad-answer {
-    color: red;
-    font-size: 18px;
+    font-weight: 500;
     margin-top: 15px;
 }
