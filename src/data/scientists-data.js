@@ -63,7 +63,7 @@ const scientists = [
     id: 9,
   },
   {
-    name: 'Sarah E.',
+    name: 'Sarah',
     surname: 'Goode',
     born: 1855,
     dead: 1905,
@@ -84,3 +84,5 @@ const scientists = [
     id: 12,
   },
 ];
+
+export { scientists };

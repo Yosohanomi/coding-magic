@@ -15,6 +15,7 @@
 .logo__header {
   width: 93px;
   height: 38px;
+  fill: var(--secondary-color);
 }
 .header__nav {
   margin-right: 360px;
@@ -72,8 +73,8 @@ padding: 10px 40px;
 }
 
 .header__nav__item__submenu__item:hover {
-    background-color: #F1F1F1;
-    color: #000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
