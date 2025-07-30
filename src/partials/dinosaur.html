@@ -1,9 +1,17 @@
 
 <section class="dinosaur">
-    <h2 class="dinosaur__title">Google динозавр</h2>
-    <div class="dinosaur__game">
-        <p class="dinosaur__game__score">0</p>
-        <img src="../img/dinosaur/dinosaur-stand.png" alt="dinosaur" class="dinosaur__img">
+    <h2 class="google-dinosaur__title">Google динозавр</h2>
+    <div class="dinosaur__container">
+        <div class="dinosaur__overlay">
+            <p id="score" class="google-dinosaur__score">0</p>
+            <div class="game-over__thumb" id="loose">
+                <p>Game over</p>
+                <p class="dinosaur__points">Points: <span id="points"></span></p>
+            </div>
+            <img src="/img/dinosaur/dino-stationary.png" alt="dinosaur" id="dinosaur" class="dinosaur__player">
+            <img src="/img/dinosaur/ground.png" alt="ground" id="ground" class="dinosaur__ground" data-ground>
+            <img src="/img/dinosaur/ground.png" alt="ground" id="ground-sec" class="dinosaur__ground" data-ground>
+        </div>    
     </div>
-    <button class="dinosaur__btn" type="button">Play</button>
+    <button class="dinosaur__btn" id="dinosaur__start-btn" type="button">Play</button>
 </section>
