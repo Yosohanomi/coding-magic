@@ -3,14 +3,6 @@
 .check-year .container {
 }
 
-.check-year__title {
-  padding-top: 36px;
-  text-align: center;
-  color: var(--secondary-color);
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .check-year__thumb {
   padding-top: 36px;
   margin-bottom: 36px;
