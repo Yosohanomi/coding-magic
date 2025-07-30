@@ -6,15 +6,16 @@
     <link rel="icon" type="image/svg+xml" href="/coding-magic/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Magic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat+Alternates&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-  <script type="module" crossorigin src="/coding-magic/assets/index-ba725c90.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-882d1925.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-63c51210.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-ade19533.css">
 </head>
 
 <body>
@@ -121,12 +122,20 @@
             <hr>
             
 <section class="dinosaur">
-    <h2 class="dinosaur__title">Google динозавр</h2>
-    <div class="dinosaur__game">
-        <p class="dinosaur__game__score">0</p>
-        <img src="../img/dinosaur/dinosaur-stand.png" alt="dinosaur" class="dinosaur__img">
+    <h2 class="google-dinosaur__title">Google динозавр</h2>
+    <div class="dinosaur__container">
+        <div class="dinosaur__overlay">
+            <p id="score" class="google-dinosaur__score">0</p>
+            <div class="game-over__thumb" id="loose">
+                <p>Game over</p>
+                <p class="dinosaur__points">Points: <span id="points"></span></p>
+            </div>
+            <img src="/coding-magic/assets/dino-stationary-997a5dc6.png" alt="dinosaur" id="dinosaur" class="dinosaur__player">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="ground" id="ground" class="dinosaur__ground" data-ground>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="ground" id="ground-sec" class="dinosaur__ground" data-ground>
+        </div>    
     </div>
-    <button class="dinosaur__btn" type="button">Play</button>
+    <button class="dinosaur__btn" id="dinosaur__start-btn" type="button">Play</button>
 </section>
             <hr>
             
