@@ -15,6 +15,7 @@
 
 @import url('./layout/header.css');
 @import url('./layout/check-year.css');
+@import url('./layout/dinosaur.css');
 @import url('./layout/football.css');
 @import url('./layout/scientists.css');
 @import url('./layout/calculator.css');
@@ -39,6 +40,6 @@
 }
 
 .dark-theme {
-    --primary-color: #FFF;
-    --secondary-color: #000;
+    --primary-color: #000;
+    --secondary-color: #FFF;
 }

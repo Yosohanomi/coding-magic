@@ -11,13 +11,6 @@
     flex-direction: column;
 }
 
-.football__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--secondary-color);
-    margin: 36px 0px;
-}
 .football__pitch {
     position: relative;
     width: 720px;

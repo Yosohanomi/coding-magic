@@ -10,11 +10,12 @@ footer .container {
 .logo {
     width: 165px;
     height: 70px;
-    margin-right: 185px;
+    margin-right: 110px;
+    fill: var(--secondary-color);
 }
 .footer__elements {
     display: flex;
-    gap: 140px;
+    gap: 135px;
 }
 .footer__contacts {
     display: flex;
@@ -59,7 +60,7 @@ footer .container {
 }
 
 .footer__send__btn {
-    color: #FFF;
+    color: var(--primary-color);
     font-size: 12px;
     padding: 10px;
     font-family: "Montserrat Alternates", sans-serif;
