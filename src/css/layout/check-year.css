@@ -37,7 +37,8 @@
 .check-year__button {
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 31px;
+  padding-top: 7px;
+  padding-bottom: 21px;
   border-radius: 0 20px 20px 0;
   background-color: #000000;
 }
@@ -48,14 +49,9 @@
   font-size: 12px;
   font-weight: 400;
 }
-.leap-success {
-  color: #039900;
-}
-.leap-error {
-  color: rgb(255, 0, 0)
-}
 
-search-icon {
+.search-icon {
 width: 15px;
 height: 15px;
+
 }
