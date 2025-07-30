@@ -1,5 +1,5 @@
-import whiteIcon from "/img/svg/header/white.svg"
-import darkIcon from "/img/svg/header/dark.svg"
+import whiteIcon from "/img/svg/white.svg"
+import darkIcon from "/img/svg/dark.svg"
 
 const icon = document.getElementById("icon")
 
