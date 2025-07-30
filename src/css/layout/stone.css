@@ -30,25 +30,28 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.stone__good-answer {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 10px 0;
-    color: green;
-}
-
-.stone__bad-answer {
-    color: red;
+.stone__result__draw {
     font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
+    transition: all 0.3s ease;
+    color: #888888;
 }
 
-.stone__draw-answer {
-    color: grey;
+.stone__result__win {
     font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
+    transition: all 0.3s ease;
+    color: #039900;
+}
+
+.stone__result__lose {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    color: #990000;
 }
 
 .stone__computer__btn {

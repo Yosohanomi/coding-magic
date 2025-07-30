@@ -38,8 +38,18 @@
     filter: invert(1);
 }
 
-.guess-number__result {
+.guess-number__win {
     font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
+    transition: all 0.3s ease;
+    color: #039900;
+}
+
+.guess-number__lose {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    color: #990000;
 }
