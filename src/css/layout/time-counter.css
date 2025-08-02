@@ -1,0 +1,58 @@
+.time-counter_title {
+align-items: center;
+justify-content: center;
+}
+
+.time-counter__thumb {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 36px;
+gap: 33px;
+}
+
+ .time-counter__form {
+  display: flex;
+  height: 35px;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+
+.time-counter__input {
+    width: 115px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #d7d7d7;
+}
+.time-counter__input::placeholder {
+  color: #7e7e7e;
+  font-family: 'Montserrat Alternates';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.time-counter__button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 21px;
+  border-radius: 0 20px 20px 0;
+  background-color: #000000;
+}
+
+.time-counter__divide {
+    width: 100px;
+    height: 0;
+  border-bottom: 1px dashed #000;
+}
+
+.time-counter__answer {
+    color: var(--secondary-color);
+    font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

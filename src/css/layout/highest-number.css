@@ -10,7 +10,7 @@ flex-direction: column;
     justify-content: center;
     padding-top: 36px;
     padding-bottom: 36px;
-    color: black;
+    color: var(--secondary-color)
  }
 
 .highest-number__form {
@@ -39,5 +39,5 @@ flex-direction: column;
 .highest-number__answer {
     padding-top: 36px;
     padding-bottom: 36px;
-    color: black;
+    color: var(--secondary-color)
 }
