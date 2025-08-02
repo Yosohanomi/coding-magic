@@ -1,5 +1,5 @@
 const userNumber = document.querySelector(".guess-number__input").value;
-const result = document.getElementById(".guess-number__result");
+const result = document.getElementById("guess-number__result");
 const button = document.querySelector(".guess-number__btn");
 
 const number = Number(userNumber);
