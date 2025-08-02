@@ -15,7 +15,6 @@
     position: absolute;
     right: 10px;
     top: 10px;
-    color: var(--secondary-color);
 }
 .game-over__thumb {
     display: none;
@@ -26,14 +25,14 @@
     text-align: center;
     padding: 10px;
     border: 1px solid #000;
+    color: var(--secondary-color);
     border-radius: 10px;
     background-color: rgb(224, 224, 224);
 }
 .show {
     display: block;
 }
-.dinosaur__points {
-}
+
 .dinosaur__player {
     --bottom: 0;
     position: absolute;
@@ -64,6 +63,7 @@
     margin: 0 auto;
     background-color: #d7d7d7;
     transition: all 350ms linear;
+    margin-bottom: 36px;
 }
 
 .dinosaur__btn:hover,

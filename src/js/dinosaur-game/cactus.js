@@ -48,6 +48,9 @@ import {
     cactus.dataset.cactus = true;
     cactus.src = cactusImg;
     cactus.classList.add('dinosaur__cactus');
+    if (document.body.classList.contains('dark-theme')) {
+      cactus.classList.add('change-color');
+    }
     setCustomProperty(cactus, '--left', 100);
     worldEl.append(cactus);
   }
