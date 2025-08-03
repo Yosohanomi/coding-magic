@@ -1,32 +1,35 @@
-const result = document.getElementById("stone__result");
-const button = document.querySelector(".stone__computer__btn");
+const result = document.querySelector(".stone__result");
+const computerScoreEl = document.querySelector(".stone__computer__score");
+const userScoreEl = document.querySelector(".stone__user__score");
+const buttons = document.querySelectorAll(".stone__btn");
 
 const choices = ["камінь", "ножиці", "папір"];
-const computerChoice = choices[Math.floor(Math.random() * 3)];
-
 let computerScore = 0;
 let userScore = 0;
 
-button.addEventListener("click", userIsPlaying)
+buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        const userChoice = choices[index];
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
 
-function userIsPlaying(userChoice) {
-    if (userChoice === computerChoice) {
-        result.textContent = "Нічия!";
-        result.classList.add = "stone__result__draw";
-    } else if (
-        (userChoice === "камінь" && computerChoice === "ножиці") ||
-        (userChoice === "ножиці" && computerChoice === "папір") ||
-        (userChoice === "папір" && computerChoice === "камінь")
-    ) {
-        result.textContent = "Ви виграли раунд!";
-        result.classList.add = "stone__result__win";
-        userScore++;
-    } else {
-        result.textContent = "Комп’ютер виграв раунд!";
-        result.classList.add = "stone__result__lose";
-        computerScore++;
-    }
+        if (userChoice === computerChoice) {
+            result.textContent = "Нічия!";
+            result.style.color = "#000000";
+        } else if (
+            (userChoice === "камінь" && computerChoice === "ножиці") ||
+            (userChoice === "ножиці" && computerChoice === "папір") ||
+            (userChoice === "папір" && computerChoice === "камінь")
+        ) {
+            result.textContent = "Ви виграли раунд!";
+            result.style.color = "#039900";
+            userScore++;
+        } else {
+            result.textContent = `Комп’ютер виграв раунд!`;
+            result.style.color = "#990000";
+            computerScore++;
+        }
 
-    document.querySelector(".stone__computer__score").textContent = computerScore;
-    document.querySelector(".stone__user__score").textContent = userScore;
-}
+        userScoreEl.textContent = userScore;
+        computerScoreEl.textContent = computerScore;
+    });
+});
