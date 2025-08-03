@@ -1,5 +1,5 @@
 const form = document.querySelector('.check-year__form');
-const result = document.querySelector('.check-year-answer');
+const result = document.querySelector('.check-year__answer');
 const button = document.querySelector('.check-year__button');
 
 button.addEventListener('click', onBtnClick);

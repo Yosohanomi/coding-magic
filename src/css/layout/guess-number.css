@@ -40,7 +40,6 @@
     width: 15px;
     height: 15px;
     color: #FFFFFF;
-    filter: invert(1);
 }
 
 .guess-number__result {
