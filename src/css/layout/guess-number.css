@@ -12,12 +12,10 @@
 }
 
 .guess-number__input {
-    padding: 10px 15px;
-    border: 1px solid #FFFFFF;
-    border-radius: 25px 0 0 25px;
-    font-size: 16px;
-    outline: none;
-    flex: 1;
+    padding-left: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    background-color: #d7d7d7;
 }
 
 .guess-number__input::placeholder {
@@ -30,12 +28,12 @@
 }
 
 .guess-number__btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 21px;
+    border-radius: 0 20px 20px 0;
     background-color: #000000;
-    border: none;
-    border-radius: 0 25px 25px 0;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s linear;
 }
 
 .guess-number__img {
@@ -44,18 +42,9 @@
     color: #FFFFFF;
 }
 
-.guess-number__win {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    color: #039900;
-}
-
-.guess-number__lose {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    color: #990000;
+.guess-number__result {
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-weight: 400;
 }

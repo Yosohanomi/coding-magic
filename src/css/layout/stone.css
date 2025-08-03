@@ -31,28 +31,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.stone__result__draw {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    color: #000000;
-}
-
-.stone__result__win {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    color: #039900;
-}
-
-.stone__result__lose {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    color: #990000;
+.stone__result {
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .stone__computer__btn {
