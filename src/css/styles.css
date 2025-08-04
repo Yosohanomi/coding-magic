@@ -14,6 +14,7 @@
 /* layout */
 
 @import url('./layout/header.css');
+@import url('./layout/header-modal.css');
 @import url('./layout/check-year.css');
 @import url('./layout/guess-number.css');
 @import url('./layout/time-counter.css');
