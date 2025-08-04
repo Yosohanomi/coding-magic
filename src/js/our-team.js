@@ -25,8 +25,8 @@ function updateTeamMember(index) {
     nameEl.textContent = member.name;
     infoEl.textContent = member.info;
 
-    indicators.forEach((el, i) => {
-        el.classList.toggle("active", i === index);
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle("active", i === index);
     });
 }
 
