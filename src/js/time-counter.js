@@ -18,6 +18,6 @@ if (isNaN(totalSeconds) || totalSeconds < 0) {
     const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
     const seconds = String(Math.floor(totalSeconds % 60)).padStart(2, '0');
      result.textContent = `${days}дн. ${hours}:${minutes}:${seconds}`
-    console.log(` (${days} ${hours} ${minutes} ${seconds}`);
+    console.log(`${days} ${hours} ${minutes} ${seconds}`);
     }
 }

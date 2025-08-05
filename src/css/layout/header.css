@@ -59,6 +59,7 @@ transform: rotate(180deg);
 }
 
 .header__nav__item__submenu {
+  background-color: var(--primary-color);
   position: absolute;
   top: 100%;
   overflow: hidden;
@@ -66,16 +67,22 @@ transform: rotate(180deg);
   visibility: hidden;
   pointer-events: 0;
   transition: opacity 350ms linear;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      border-radius: 0 0 20px 20px;
 }
 
 .header__nav__item__submenu__item {
 padding: 10px 40px;
+
 }
 
 .header__nav__item__submenu__item:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     cursor: pointer;
+
 }
 
 .switch-icon {
