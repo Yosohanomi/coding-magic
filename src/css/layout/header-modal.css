@@ -9,7 +9,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 300ms linear;
+  transition: opacity 300ms linear; 
 }
 
 .modal__backdrop.active {
@@ -21,13 +21,12 @@
   width: 576px;
   height: 316px;
   position: relative;
-  top: 30%;
-  left: 33%;
-  transform: (-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
   border-radius: 20px;
   background: var(--primary-color);
-  padding: 20px;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
 }
 .close__button {
   position: absolute;
@@ -67,11 +66,13 @@
   height: 35px;
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 }
-.modal__input {
+.modal__input-form {
+    color: #7e7e7e;
+    font-size: 12px;
   position: absolute;
   height: 35px;
   top: 181px;
-  left: 50%;
+  left: 204px;
   width: 169px;
   padding-left: 10px;
   border: none;
@@ -79,7 +80,7 @@
   background-color: #d7d7d7;
 }
 
-.modal__input::placeholder {
+.modal__input-form::placeholder {
   color: #7e7e7e;
   font-family: 'Montserrat Alternates';
   font-size: 12px;
@@ -88,7 +89,19 @@
   line-height: normal;
 }
 
-.modal__button {
+.modal__button-form {
+  position: absolute;
+  top: 234px;
+  left: 236px;
+  width: 105px;
+  height: 35px;
+color: var(--primary-color);
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-weight: 400;
+  border-radius: 20px;
+background: var(--secondary-color);
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 .modal__text {
