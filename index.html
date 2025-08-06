@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     
-  <script type="module" crossorigin src="/coding-magic/assets/index-e26e67e7.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-7261f5a6.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-2efae69a.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-a47ecb27.css">
 </head>
 
 <body>
@@ -111,52 +111,41 @@
             <section class="guess-number">
     <div class="conteiner">
         <h2 class="guess-number__title">Вгадай число, яке загадав комп’ютер</h2>
-        <form action="" class="guess-number__form">
-            <input type="text" placeholder="Введіть число" class="guess-number__input">
-            <button class="guess-number__btn">
+        <div class="guess-number__thumb">
+            <form action="" class="guess-number__form">
+                <input type="text" placeholder="Введіть число" class="guess-number__input">
+                <button class="guess-number__btn">
                 <svg class="guess-number__img">
                     <use href="/coding-magic/assets/symbol-defs-0f49853e.svg#icon-loupe"></use>
                 </svg>
             </button>
+            </form>
             <p class="guess-number__result"></p>
-        </form>
-    </div>
+        </div>
 </section>
             <hr>
             <section class="stone">
     <div class="conteiner">
         <h2 class="stone__title">Камінь - ножиці - папір</h2>
-        <div class="stone__options">
-            <button class="stone__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOTSURBVHgB7ZhbiE1RGMe/45LcL7kklxkkiuT2gAxSPLg90ORBaiI88IBEuafw4JpLKUREIrnkUghJKS9DRMwwM2g8GMxgmhoztt835zvZs+fsffbunMHD+devNWetb639P2vvvb7vjEhWWWUVqJhkUI7j9KY5BcOhU4Spr+FQLBY77h1oJRkS5nJp7sE7WAoVIae2hNFwmDU+YfKqezAjO+gyp+1ZqHUNv4TzXLg0xRqbafKIm+bubyHpm+tv5vRuHIQiKDPKYToUEjcjxVK687mSSenOQTFcgY4BcavhK+QExBRAkWTQXF9d0My1DhF/C25LsMFiyaDBV3Ad2oSMz7FdnOIzPsXGB0u6YpF8KIEoR4nO22bz2vqM74AvMEbSEQvshzMSUWoMXqrRgJit8A3mShjpw2/bvxIu2W1IaJ9ElK1VCQMCYjbZ+vOSDfbSIwH2wmMzpDyC3TBTjxYYa7frqEQ3edHmroM8aJUkRh+HQnfHengBv8zQZdu1yX7Pmh0zeqEjEs1gvl3jvl3vrvUPgXGutZ3EhF1QCjvtgmWwxzJEqoslTB6UkLI5tdABWkAX618FP6EKzjcY1EHrHOX5ho/sObgAEyEWwuT+EP4SL8sin7GYPadFCYPjdZt9gnXLT0K101T6pX5ABXyAz9Z/QDIgM9ngdgGfl5OkJwQEt6fZBCtgDtRL00JDq5KuEi+3JrDek4D1tAYYAlq9VPjE5NKU6Nujt/aNBIhFdAe382c+1PH5QcDFd9CMhCf8vVqS14XzYSjUE3Na4oWFV7nqSw3qqX1TUghT32kGSWrVmlFNgXnStGLSO7AX9G0dCKtgDehdeuoyWw1zxd7eVKVQaLHWcyjwGRtmz2nM098HTsFF7xzdwc7Qz/mT/8rZrY/26ofZMbf0dvaASo8BXUt3q7t1TdIXzDNX5zTJLvqSrKVdLvEtVp3D4AonnsYWSjTpwfqM+VOlscECmt2uLr3t3pOjBpYx94b8LWGsO/SU/0maFmEJPHSdmXrozpZ/KSdePGgxoTm2HLZYlspx4kWB5tyVSea1k+aUpbn7lluvOf4V83SogxGe/nswS5pLloNPQNcQsXdgg6evizSXLF/WOAG/6Dzxx/TLSASl+7u4G7y1LBM2vkoiKK3/LGgGoHkP+vA/lPg56Cf9TayFhBYdjXI5X7BQmsOgmdQCYiP0SxGa7HAW61uMySuSVVZZRddvnypoiJSEYc8AAAAASUVORK5CYII=" alt="stone" class="stone__img"></button>
-            <button class="stone__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUUSURBVHgBxZhriFVVFMfXlakoqWbSD2nRPNBKzcd8sRKyO41FBQbZA81CicKM6IUj9B4zDTOHHqRUI2M5kmaWplhReUUpCj+UpkUPuzNEUVEqNT3UnN1/sf8Hlttzzpwbd24Lfpyz136ts87a6+x9RDKKc+5EsBGslf8g6JcDX4JdoDprvwGSXe4Fo8AkTNAspcsMcDw4Alqk3AKjvgE3gFbwgZQo6FMEt4ErwE+gFOf0OfiZzssgfT3gN9BUQv+baGAVx1Cpk3IJBmsEB0xZvVgoof/n4A5TVhkj5RIMNhz8rR5g+XRwCOQz9J0OusAQlqto4LlSLsFgNeAwqDe6xeC9DH13gzZTHsexBko5hRPdacoN4HdwfkqfJvCnjTfct4DtUm7BoA+DrYFuJXg9pc/7oD3QfQ1mSj8YqKv3gI07vq7YeIJuLOgNvDcFfF/212smWBquXpQ3g5dj2r4COgLdF5oBpL+Eq/cgmGB0F9FTQ42uIcx1uL8K9Lhy5r8EI5eDDYGuoKvalFcoQZt3wAvS34JJzqN3hhhdHuxnnNaxvsHUXxjGY38b2RyjUy/Op/dWBXWaR2+USgomvAwMNuXIi+qpsUZfq16XSgsmXQ+WBLqPNPcFus4wF1ZEjMcGGd2UKBZZrg9Xc6WNLNi85vyu+VMwl+UVcTmyYmJXr9FdR93IpK9MRQUGbAOP8F7TzKngK+d34G/J/y3GY9VcONeDOfReXiotmHSA48aV5QU0plVjkDrdlP4IFkolhLG2yvnDTiRHwF80ZAn4mYtkNHiDbTQnfuz8cbOHbQrgiawru6oPw+pw6RR/3FwJZoHd4CCoBYfATvFHyangM7ZdB0aDHjBO/PF2H4fV+ktA0fnv9bxcLtclpQo6T2RsvegyHLQZd3+AiyWDOP/N3ur8aW9kUrtcQmd9ej37LsbTzafuAvFeOo3NdoHXoqdH/Sm4dIMZ0L1pxtKHuxqMEH9wV49vQZtu1mucTgOToNsrGZ6smk/VanRtjKlNzm/99cC0hR5rNO2034dytJd+YQxq0n5J6xmPc027Z8BOcHIWA5/UHGbKj3Li8TFtd4AW3s9kOw2LK6m7D2yO6TeV7VqMU76LymnGnQR+BdewPM35vwjDYtpG+75hLH8Lbma62UbdMV8a0z/aiU9kWX+r7AMnpBmoH/si73P0yJyEtvrKVpsH6dZXRG+oUXnWFcC8hDHazMMMpIHNaQYuA8t5H72y4yTee71R/OG6FzwUTFzgfVOKF8OHWQsW2TbhHyb9sHfxXiffgZV1WI6V+8Em1H2CAXWFanDbXctjYLy+PrRRQ/eAu8NBUKf/ezaCyVRpZjg7zUAnPgmr/CM+ER/dwCfv6WApVXeBNVHa4MSalDv5ICoLtJ2Lz6eannp5r3PXSJJggHbwPO8nOH/EtGmkmullPct6GNKfSLUxY53DRdTIeN4ejW3a1DNUmlnWuG5PMzBaddGfqFYOoLHxLFe4/sIdzHr9JdyRMt7b4FVjTJH9HwBPca6FrK91/i/YtZImzifjd53/Mmh5FHgcPAdujRYNrrOd3yjUpYw1nA+YZ/ks8KDzn7g1YLJpu0Hnlb4EjYY6n9P2JE3u/B5QvyKzM4x3Dz3fkFBfQ2OLLuvZhbG2jDGkW6dZNOoWxqB+qm6XjMJQUekAl9Kzl/PN7KdHz5BSBZ1GgKed39NpfOinbZEzJ7kSxhoDVoMfnP+BqZ+2dWpwWr9/AX12hgVFsXa6AAAAAElFTkSuQmCC" alt="scissors" class="stone__img"></button>
-            <button class="stone__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPFSURBVHgBzVhbaxQxGP22br1VS7VYL1t1pXZrF7yheAOhoKD4ItQ/oCAIiuCbQsUHL4i/QFBQUcRXFUHQF30QrQreaa21VnvRbrVWLdb7eM4m06ZxZt1td3d64JBJJjM5+fIlX5KQDBOO42xBchbsBDvA7+BDsA98AvaC3WAiFAp1yzARluEjDjaCh8AZmjPBFeAmcBE4kRXRmc9I3oJtYLt+ZkcegP3gK3TidbYFFoP1+PFFvwoQxv/PAiPgbHA6OB+s0M+1uiOFqMtPEqKszo5wZI6MROAS8FaqChD/C8kbzdvi35HxSBaDE3SHOBJ7wcsjETgObNENFIqyUlw3EBVlqQVgJVgDsffEvyPfkNRbog8j+RSSNIEPpiEp1Q3GwDpRQzEZ5LtJovzrgyjffAHSr3aBJyDieAZt0XA/2VbYejFFVK+rRFkgop/pP+W6Gn3jKXhBC+gC74LdEPHeo7G1oiyaCeiXtGxzGD9YjefzMmiFr6J6Tyv0gKdEWYb5du1XmaBZlH9lgmLddnIWl2luBJsgIGHXRiei+rFcz7ZM8AWMG//wQifa/WHkOcMTbuPVjoLnhEF5rZN7HLPa3A1e43OBaFPKoI/ZoLk5vGNyREajQqtNTkT6uoRh2i6oZYYzs9VHJB32j+QAjrfP0OXou0kLEpwEc2T0gKtGco11BTaAS1N8kPZ6mSVweVNDrAu4G6nwqXwd/C35BQUyugxYkOaMedWE73WA5yRP0HGZhnvJvDnEMZ8PouAOyR+4CaFhGEYHBDaBRRBS6vFBDbhH8gdasM3NJAXqGMoQVyXBg3uAFjdTYLxI6JdBgwGj382YArlfi0jwYBzucDOmQG61YxI8GEVa3YwpkAeYuAQPjmK7m7EtOBqG2FcgN6kRv21XPoC2ec7xFdik00oJDjxwMe6/cwsGBOqtPBfIICfKR3AftPS6BfZwPpMAF2stbMjuusCqwxPaXAkIOu5Xm2W2wOeiTndBYRt40CywBXIFXy7BgRO00SywBfIAXgYzj5VgwDuZPrPAFshdTZGo6Z5P7IRRuINZJkYcJobMYm67UJHbLgpslSwD/+YaN9Uq5h3iVfCkqI3Czf/95D643chvBRskOwIP+Bzcj/p9U+BRxvNoVHID3v9dAueBvBNixHgs1tpnwivuMiavRK9WIV0o6jp3jGQPjBY8sZ3RAtebkSMdgXTW/eAaLZa722weOzlTb+j/roO4nlSV/xGID07Delfcm3n6IJI6J/XtVLooATeAj9IRlxYgbLOTXdwBS9Jt/y8O7AAqJdaToAAAAABJRU5ErkJggg==" alt="paper" class="stone__img"></button>
-        </div>
-        <p class="stone__result"></p>
-        <button class="stone__computer__btn">Варіант комп’ютера</button>
-        <div class="stone__score">
-            <p>Рахунок:</p>
-            <p>Комп’ютер - <span class="stone__computer__score">0</span></p>
-            <p>Ви - <span class="stone__user__score">0</span></p>
+        <div class="stone__game">
+            <div class="stone__row">
+                <div class="stone__options">
+                    <button class="stone__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOTSURBVHgB7ZhbiE1RGMe/45LcL7kklxkkiuT2gAxSPLg90ORBaiI88IBEuafw4JpLKUREIrnkUghJKS9DRMwwM2g8GMxgmhoztt835zvZs+fsffbunMHD+devNWetb639P2vvvb7vjEhWWWUVqJhkUI7j9KY5BcOhU4Spr+FQLBY77h1oJRkS5nJp7sE7WAoVIae2hNFwmDU+YfKqezAjO+gyp+1ZqHUNv4TzXLg0xRqbafKIm+bubyHpm+tv5vRuHIQiKDPKYToUEjcjxVK687mSSenOQTFcgY4BcavhK+QExBRAkWTQXF9d0My1DhF/C25LsMFiyaDBV3Ad2oSMz7FdnOIzPsXGB0u6YpF8KIEoR4nO22bz2vqM74AvMEbSEQvshzMSUWoMXqrRgJit8A3mShjpw2/bvxIu2W1IaJ9ElK1VCQMCYjbZ+vOSDfbSIwH2wmMzpDyC3TBTjxYYa7frqEQ3edHmroM8aJUkRh+HQnfHengBv8zQZdu1yX7Pmh0zeqEjEs1gvl3jvl3vrvUPgXGutZ3EhF1QCjvtgmWwxzJEqoslTB6UkLI5tdABWkAX618FP6EKzjcY1EHrHOX5ho/sObgAEyEWwuT+EP4SL8sin7GYPadFCYPjdZt9gnXLT0K101T6pX5ABXyAz9Z/QDIgM9ngdgGfl5OkJwQEt6fZBCtgDtRL00JDq5KuEi+3JrDek4D1tAYYAlq9VPjE5NKU6Nujt/aNBIhFdAe382c+1PH5QcDFd9CMhCf8vVqS14XzYSjUE3Na4oWFV7nqSw3qqX1TUghT32kGSWrVmlFNgXnStGLSO7AX9G0dCKtgDehdeuoyWw1zxd7eVKVQaLHWcyjwGRtmz2nM098HTsFF7xzdwc7Qz/mT/8rZrY/26ofZMbf0dvaASo8BXUt3q7t1TdIXzDNX5zTJLvqSrKVdLvEtVp3D4AonnsYWSjTpwfqM+VOlscECmt2uLr3t3pOjBpYx94b8LWGsO/SU/0maFmEJPHSdmXrozpZ/KSdePGgxoTm2HLZYlspx4kWB5tyVSea1k+aUpbn7lluvOf4V83SogxGe/nswS5pLloNPQNcQsXdgg6evizSXLF/WOAG/6Dzxx/TLSASl+7u4G7y1LBM2vkoiKK3/LGgGoHkP+vA/lPg56Cf9TayFhBYdjXI5X7BQmsOgmdQCYiP0SxGa7HAW61uMySuSVVZZRddvnypoiJSEYc8AAAAASUVORK5CYII=" alt="stone" class="stone__img"></button>
+                    <button class="stone__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUUSURBVHgBxZhriFVVFMfXlakoqWbSD2nRPNBKzcd8sRKyO41FBQbZA81CicKM6IUj9B4zDTOHHqRUI2M5kmaWplhReUUpCj+UpkUPuzNEUVEqNT3UnN1/sf8Hlttzzpwbd24Lfpyz136ts87a6+x9RDKKc+5EsBGslf8g6JcDX4JdoDprvwGSXe4Fo8AkTNAspcsMcDw4Alqk3AKjvgE3gFbwgZQo6FMEt4ErwE+gFOf0OfiZzssgfT3gN9BUQv+baGAVx1Cpk3IJBmsEB0xZvVgoof/n4A5TVhkj5RIMNhz8rR5g+XRwCOQz9J0OusAQlqto4LlSLsFgNeAwqDe6xeC9DH13gzZTHsexBko5hRPdacoN4HdwfkqfJvCnjTfct4DtUm7BoA+DrYFuJXg9pc/7oD3QfQ1mSj8YqKv3gI07vq7YeIJuLOgNvDcFfF/212smWBquXpQ3g5dj2r4COgLdF5oBpL+Eq/cgmGB0F9FTQ42uIcx1uL8K9Lhy5r8EI5eDDYGuoKvalFcoQZt3wAvS34JJzqN3hhhdHuxnnNaxvsHUXxjGY38b2RyjUy/Op/dWBXWaR2+USgomvAwMNuXIi+qpsUZfq16XSgsmXQ+WBLqPNPcFus4wF1ZEjMcGGd2UKBZZrg9Xc6WNLNi85vyu+VMwl+UVcTmyYmJXr9FdR93IpK9MRQUGbAOP8F7TzKngK+d34G/J/y3GY9VcONeDOfReXiotmHSA48aV5QU0plVjkDrdlP4IFkolhLG2yvnDTiRHwF80ZAn4mYtkNHiDbTQnfuz8cbOHbQrgiawru6oPw+pw6RR/3FwJZoHd4CCoBYfATvFHyangM7ZdB0aDHjBO/PF2H4fV+ktA0fnv9bxcLtclpQo6T2RsvegyHLQZd3+AiyWDOP/N3ur8aW9kUrtcQmd9ej37LsbTzafuAvFeOo3NdoHXoqdH/Sm4dIMZ0L1pxtKHuxqMEH9wV49vQZtu1mucTgOToNsrGZ6smk/VanRtjKlNzm/99cC0hR5rNO2034dytJd+YQxq0n5J6xmPc027Z8BOcHIWA5/UHGbKj3Li8TFtd4AW3s9kOw2LK6m7D2yO6TeV7VqMU76LymnGnQR+BdewPM35vwjDYtpG+75hLH8Lbma62UbdMV8a0z/aiU9kWX+r7AMnpBmoH/si73P0yJyEtvrKVpsH6dZXRG+oUXnWFcC8hDHazMMMpIHNaQYuA8t5H72y4yTee71R/OG6FzwUTFzgfVOKF8OHWQsW2TbhHyb9sHfxXiffgZV1WI6V+8Em1H2CAXWFanDbXctjYLy+PrRRQ/eAu8NBUKf/ezaCyVRpZjg7zUAnPgmr/CM+ER/dwCfv6WApVXeBNVHa4MSalDv5ICoLtJ2Lz6eannp5r3PXSJJggHbwPO8nOH/EtGmkmullPct6GNKfSLUxY53DRdTIeN4ejW3a1DNUmlnWuG5PMzBaddGfqFYOoLHxLFe4/sIdzHr9JdyRMt7b4FVjTJH9HwBPca6FrK91/i/YtZImzifjd53/Mmh5FHgcPAdujRYNrrOd3yjUpYw1nA+YZ/ks8KDzn7g1YLJpu0Hnlb4EjYY6n9P2JE3u/B5QvyKzM4x3Dz3fkFBfQ2OLLuvZhbG2jDGkW6dZNOoWxqB+qm6XjMJQUekAl9Kzl/PN7KdHz5BSBZ1GgKed39NpfOinbZEzJ7kSxhoDVoMfnP+BqZ+2dWpwWr9/AX12hgVFsXa6AAAAAElFTkSuQmCC" alt="scissors" class="stone__img"></button>
+                    <button class="stone__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPFSURBVHgBzVhbaxQxGP22br1VS7VYL1t1pXZrF7yheAOhoKD4ItQ/oCAIiuCbQsUHL4i/QFBQUcRXFUHQF30QrQreaa21VnvRbrVWLdb7eM4m06ZxZt1td3d64JBJJjM5+fIlX5KQDBOO42xBchbsBDvA7+BDsA98AvaC3WAiFAp1yzARluEjDjaCh8AZmjPBFeAmcBE4kRXRmc9I3oJtYLt+ZkcegP3gK3TidbYFFoP1+PFFvwoQxv/PAiPgbHA6OB+s0M+1uiOFqMtPEqKszo5wZI6MROAS8FaqChD/C8kbzdvi35HxSBaDE3SHOBJ7wcsjETgObNENFIqyUlw3EBVlqQVgJVgDsffEvyPfkNRbog8j+RSSNIEPpiEp1Q3GwDpRQzEZ5LtJovzrgyjffAHSr3aBJyDieAZt0XA/2VbYejFFVK+rRFkgop/pP+W6Gn3jKXhBC+gC74LdEPHeo7G1oiyaCeiXtGxzGD9YjefzMmiFr6J6Tyv0gKdEWYb5du1XmaBZlH9lgmLddnIWl2luBJsgIGHXRiei+rFcz7ZM8AWMG//wQifa/WHkOcMTbuPVjoLnhEF5rZN7HLPa3A1e43OBaFPKoI/ZoLk5vGNyREajQqtNTkT6uoRh2i6oZYYzs9VHJB32j+QAjrfP0OXou0kLEpwEc2T0gKtGco11BTaAS1N8kPZ6mSVweVNDrAu4G6nwqXwd/C35BQUyugxYkOaMedWE73WA5yRP0HGZhnvJvDnEMZ8PouAOyR+4CaFhGEYHBDaBRRBS6vFBDbhH8gdasM3NJAXqGMoQVyXBg3uAFjdTYLxI6JdBgwGj382YArlfi0jwYBzucDOmQG61YxI8GEVa3YwpkAeYuAQPjmK7m7EtOBqG2FcgN6kRv21XPoC2ec7xFdik00oJDjxwMe6/cwsGBOqtPBfIICfKR3AftPS6BfZwPpMAF2stbMjuusCqwxPaXAkIOu5Xm2W2wOeiTndBYRt40CywBXIFXy7BgRO00SywBfIAXgYzj5VgwDuZPrPAFshdTZGo6Z5P7IRRuINZJkYcJobMYm67UJHbLgpslSwD/+YaN9Uq5h3iVfCkqI3Czf/95D643chvBRskOwIP+Bzcj/p9U+BRxvNoVHID3v9dAueBvBNixHgs1tpnwivuMiavRK9WIV0o6jp3jGQPjBY8sZ3RAtebkSMdgXTW/eAaLZa722weOzlTb+j/roO4nlSV/xGID07Delfcm3n6IJI6J/XtVLooATeAj9IRlxYgbLOTXdwBS9Jt/y8O7AAqJdaToAAAAABJRU5ErkJggg==" alt="paper" class="stone__img"></button>
+                </div>
+
+                <div class="stone__score">
+                    <p>Рахунок:</p>
+                    <p>Комп’ютер - <span class="stone__computer__score">0</span></p>
+                    <p>Ви - <span class="stone__user__score">0</span></p>
+                </div>
+            </div>
+
+            <p class="stone__result"></p>
+            <button class="stone__computer__btn">Варіант комп’ютера</button>
         </div>
     </div>
-</section>
-            
-            <hr>
-            <section>
-<h2 class="time-counter_title">Калькулятор часу</h2>
-<div class="time-counter__thumb">
-<form class="time-counter__form">
-    <input type="text" name="year" class="time-counter__input"
-    placeholder="Введіть число" />
-    <button class="time-counter__button">
-        <svg class="search-icon">
-            <use href="/coding-magic/assets/symbol-defs-0f49853e.svg#icon-loupe"></use>
-        </svg>
-    </button>
-        </form>
-        <div class="time-counter__divide"></div>
-        <p class="time-counter__answer">0 дн. 00:00:00</p>
-        </div>
 </section>
             <hr>
             <section class="calculator">
@@ -175,6 +164,23 @@
             <p class="calculator__group__result"></p>
         </div>
     </div>
+</section>
+            <hr>
+            <section>
+<h2 class="time-counter_title">Калькулятор часу</h2>
+<div class="time-counter__thumb">
+<form class="time-counter__form">
+    <input type="text" name="year" class="time-counter__input"
+    placeholder="Введіть число" />
+    <button class="time-counter__button">
+        <svg class="search-icon">
+            <use href="/coding-magic/assets/symbol-defs-0f49853e.svg#icon-loupe"></use>
+        </svg>
+    </button>
+        </form>
+        <div class="time-counter__divide"></div>
+        <p class="time-counter__answer">0 дн. 00:00:00</p>
+        </div>
 </section>
             <hr>
             
@@ -221,7 +227,7 @@
 
         <div class="our-team__wrapper">
             <button class="our-team__arrow__left">
-        <img src="/src/img/our-team/arrow-left.png" alt="Попередній" class="our-team__arrow__left__img"/>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAABmCAYAAACEPrIXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgB7dFBDYQADAXRZhUgAQn4N7NWgAMeZpp5ye990pk9zlnkevZ/dswCX8w1CxRDVQxVMVTFUBVDVQxVMVTFUBVDVQxVMVTFUBVDVQxVMVTFUBVDVQxVMVTFUBVDVQxVMVTFUP1mqVVf+hRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURaro85Z5HjPDaGge2DqjYDsAAAAAElFTkSuQmCC" alt="Попередній" class="our-team__arrow__left__img" />
       </button>
 
             <div class="our-team__main">
@@ -229,15 +235,15 @@
                 <p class="our-team__info"></p>
             </div>
 
-            <div class="our-team__indicators">
-                <span class="our-team__indicator active"></span>
-                <span class="our-team__indicator"></span>
-                <span class="our-team__indicator"></span>
-            </div>
-
             <button class="our-team__arrow__right">
-        <img src="/src/img/our-team/arrow-right.png" alt="Наступний" class="our-team__arrow__right__img"/>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAABmCAYAAACEPrIXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVHgB7dpRCcMADAbhMAWVUAnzb2ZW1lKohrtwH/wCDvKYmccxi5zXfte+s8gdU5RBURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRl8UZ9JjirTq4YqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqFaFXPMwhfHc5b4A3pLe2DX0SayAAAAAElFTkSuQmCC" alt="Наступний" class="our-team__arrow__right__img" />
       </button>
+        </div>
+
+        <div class="our-team__indicators">
+            <span class="our-team__indicator active"></span>
+            <span class="our-team__indicator"></span>
+            <span class="our-team__indicator"></span>
         </div>
     </div>
 </section>
@@ -427,7 +433,7 @@
 </section>
         </div>
     </main>
-        <div class="modal__footer__backdrop active" id="backdrop-footer">
+    <div class="modal__footer__backdrop active" id="backdrop-footer">
   <div class="modal__footer__container">
     <button class="close__button" type="button" id="close-modal-footer-btn">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
@@ -445,7 +451,7 @@
   </div>
 </div>
 
-        <footer>
+    <footer>
   <div class="container">
     <a href="index.html" class="logo__link">
       <svg class="logo">
@@ -493,7 +499,7 @@
 
 
 
-        
+    
 </body>
 
 </html>
