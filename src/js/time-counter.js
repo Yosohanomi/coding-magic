@@ -17,7 +17,7 @@ if (isNaN(totalSeconds) || totalSeconds < 0) {
     const hours = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, '0');
     const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
     const seconds = String(Math.floor(totalSeconds % 60)).padStart(2, '0');
-     result.textContent = `${days}дн. ${hours}:${minutes}:${seconds}`
+     result.textContent = `${days} дн. ${hours}:${minutes}:${seconds}`
     console.log(`${days} ${hours} ${minutes} ${seconds}`);
     }
 }
