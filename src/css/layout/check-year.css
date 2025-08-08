@@ -22,15 +22,12 @@
   padding-left: 10px;
   border: none;
   border-radius: 20px 0 0 20px;
-  background-color: #d7d7d7;
 }
 .check-year__input::placeholder {
   color: #7e7e7e;
   font-family: 'Montserrat Alternates';
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .check-year__button {
