@@ -1,9 +1,3 @@
-.guess-number {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .guess-number__thumb {
     margin-bottom: 36px;
     display: flex;

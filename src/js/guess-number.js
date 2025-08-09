@@ -18,7 +18,7 @@ button.addEventListener("click", e => {
         result.textContent = `Вітаю, ви вгадали число ${computerNumber}!`;
         result.style.color = "#039900";
     } else {
-        result.textContent = `Ви програли, комп’ютер загадав ${computerNumber}`;
+        result.textContent = `Ви програли, комп’ютер загадав число ${computerNumber}`;
         result.style.color = "#990000";
     }
 });
