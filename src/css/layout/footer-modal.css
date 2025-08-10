@@ -89,3 +89,8 @@
 .change-color {
     filter: invert(100%);
 }
+
+.change-color:hover,
+.change-color:focus {
+    filter: invert(100%);
+}

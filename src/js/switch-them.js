@@ -3,12 +3,17 @@ import darkIcon from "/img/svg/dark.svg";
 
 const icon = document.getElementById("icon");
 const inputBtn = document.querySelectorAll('.light-border')
+const teamArrow = document.querySelectorAll('.team-arrow')
 
 icon.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme")
     const img = document.querySelectorAll('.png-switch');
     img.forEach(image => {
         image.classList.toggle('change-color');
+    });
+
+    teamArrow.forEach(arrow => {
+        arrow.classList.toggle('change-color');
     });
 
     inputBtn.forEach(btn => {

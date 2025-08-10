@@ -14,7 +14,7 @@ buttons.forEach((button, index) => {
 
         if (userChoice === computerChoice) {
             result.textContent = `Нічия! Обидва обрали ${userChoice}`;
-            result.style.color = "#000000";
+            result.style.color = "var(--secondary-color)";
         } else if (
             (userChoice === "камінь" && computerChoice === "ножиці") ||
             (userChoice === "ножиці" && computerChoice === "папір") ||
