@@ -9,6 +9,10 @@ p {
   margin-top: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
