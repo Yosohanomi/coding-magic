@@ -1,5 +1,6 @@
 import './js/header'
 import './js/header-modal'
+import './js/header-filter'
 import './js/check-year'
 import './js/guess-number'
 import './js/stone'
