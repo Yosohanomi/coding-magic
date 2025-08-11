@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     
-  <script type="module" crossorigin src="/coding-magic/assets/index-32327f3a.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-79a6b568.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-61df975b.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-c82dd48d.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
     <nav class="header__nav">
       <ul class="header__nav_list">
         <li class="header__nav__item">
-          <a class="header__nav__item__link" href="">
+          <a class="header__nav__item__link" href="" id="nav-link">
             Інтерактив
             <svg class="header__nav__item__link__icon">
               <use href="/coding-magic/assets/symbol-defs-0f49853e.svg#icon-header-arrow"></use>
@@ -90,10 +90,9 @@
     <main>
         <div class="container">
             <h1 class="hero__title">Популярні інтерактивні ігри</h1>
-            <hr>
-            <section class="check-year">
+            <section class="check-year" data-category="numerical">
+    <hr>
         <h2 class="check-year__title">Перевір в який рік ти народився</h2>
-       
         <div class="check-year__thumb"> 
         <form class="check-year__form">
                 <input type="text" name="year" class="check-year__input"
@@ -104,12 +103,13 @@
                     </svg>
                 </button>
         </form>
+        </div>
         <p class="check-year__answer"></p>
 </section>
 
-            <hr>
-            <section class="guess-number">
-    <div class="conteiner">
+            
+            <section class="guess-number" data-category="numerical">
+        <hr>
         <h2 class="guess-number__title">Вгадай число, яке загадав комп’ютер</h2>
         <div class="guess-number__thumb">
             <form action="" class="guess-number__form">
@@ -123,9 +123,9 @@
             <p class="guess-number__result"></p>
         </div>
 </section>
-            <hr>
-            <section class="stone">
-    <div class="conteiner">
+            
+            <section class="stone" data-category="game">
+    <hr>
         <h2 class="stone__title">Камінь - ножиці - папір</h2>
         <div class="stone__game">
             <div class="stone__row-wrapper">
@@ -147,11 +147,10 @@
             <p class="stone__result"></p>
             <button class="stone__computer__btn">Варіант комп’ютера</button>
         </div>
-    </div>
 </section>
-            <hr>
-            <section class="calculator">
-    <div class="container">
+            
+            <section class="calculator" data-category="numerical">
+    <hr>
         <h2 class="calculator__title">Калькулятор</h2>
         <div class="calculator__group">
             <input type="text" class="calculator__group__num1" placeholder="Введіть число" />
@@ -165,10 +164,10 @@
             <button class="calculator__group__equal">=</button>
             <input type="text" class="calculator__group__result" placeholder="Результат" />
         </div>
-    </div>
 </section>
-            <hr>
-            <section>
+            
+            <section data-category="numerical">
+    <hr>
 <h2 class="time-counter_title">Калькулятор часу</h2>
 <div class="time-counter__thumb">
 <form class="time-counter__form">
@@ -182,11 +181,12 @@
         </form>
         <div class="time-counter__divide"></div>
         <p class="time-counter__answer">0 дн. 00:00:00</p>
-        </div>
+        </div>       
 </section>
-            <hr>
             
-<section class="dinosaur">
+            
+<section class="dinosaur" data-category="game">
+    <hr>
     <h2 class="google-dinosaur__title">Google динозавр</h2>
     <div class="dinosaur__container">
         <div class="dinosaur__overlay">
@@ -202,28 +202,32 @@
     </div>
     <button class="dinosaur__btn" id="dinosaur__start-btn" type="button">Play</button>
 </section>
-            <hr>
             
-<section class="football">
+            
+<section class="football" data-category="game">
+    <hr>
         <h2 class="football__title">Футбол</h2>
         <div class="football__pitch" id="football-pitch">
             <img src="data:image/png;base64,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" alt="football ball" class="football__img" id="ball">
         </div>
-        <hr>
 </section>
-            <hr>
-            <section class="highest-number">
-    <h1 class="highest-number__title">Введіть 3 числа
-    </h1>
-    <form action="" class="highest-number__form">
-        <input class="highest-number__input highest-number__input-first" placeholder="Введіть число" type="text">
-        <input class="highest-number__input highest-number__input-second" placeholder="Введіть число" type="text">
-        <input class="highest-number__input highest-number__input-third" placeholder="Введіть число" type="text">
-    </form>
+            
+            <section class="highest-number" data-category="numerical">
+    <hr>
+    <h2 class="highest-number__title">Введіть 3 числа
+    </h2>
+    <div class="form__thumb">
+        <form action="" class="highest-number__form">
+            <input class="highest-number__input highest-number__input-first" placeholder="Введіть число" type="text">
+            <input class="highest-number__input highest-number__input-second" placeholder="Введіть число" type="text">
+            <input class="highest-number__input highest-number__input-third" placeholder="Введіть число" type="text">
+        </form>
+    </div>
     <p class="highest-number__answer"></p>
 </section>
-            <hr>
-            <section id="our-team" class="our-team">
+            
+            <section id="our-team" class="our-team" data-category="acquaintance">
+    <hr>
     <div class="container">
         <h2 class="our-team__title">Наша команда</h2>
         <div class="our-team__wrapper">
@@ -249,8 +253,9 @@
         </div>
     </div>
 </section>
-            <hr>
-            <section class="scientists">
+            
+            <section class="scientists" data-category="acquaintance">
+  <hr>
     <h2 class="scientists__title">Обери вченого/их</h2>
     <ul class="scientists__list" id="scientists-list">
       <!-- <li class="scientists__item">
