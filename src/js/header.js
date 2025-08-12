@@ -62,4 +62,3 @@ category: 'acquaintance',
 ]
 
 const numerical = document.getElementById("numerical")
-console.log(numerical);
