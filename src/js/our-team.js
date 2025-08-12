@@ -1,15 +1,15 @@
 const teamMembers = [{
-        img: "img/our-team/Sofia.jpg",
+        img: "/img/our-team/Sofia.jpg",
         name: "Лисенко Софія(Team Leader)",
         info: "Виконала: футер+модалка, гугл діно, футбол, вчені"
     },
     {
-        img: "img/our-team/Artem.png",
+        img: "/img/our-team/Artem.png",
         name: "Чеглов Артем(Scrum Master)",
         info: "Виконав: вгадай число, камінь ножиці папір, калькулятор, наша команда"
     },
     {
-        img: "img/our-team/Kirill.png",
+        img: "/img/our-team/Kirill.png",
         name: "Карайсенлі Кирило(робітник)",
         info: "Виконав: хедер+модалка, Перевір рік, калькулятор часу, введіть 3 числа"
     }
