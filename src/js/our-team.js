@@ -1,19 +1,24 @@
+import SofiaImg from '../img/our-team/Sofia.jpg';
+import ArtemImg from '../img/our-team/Artem.png';
+import KirillImg from '../img/our-team/Kirill.png';
+
 const teamMembers = [{
-        img: "/img/our-team/Sofia.jpg",
+        img: SofiaImg,
         name: "Лисенко Софія(Team Leader)",
         info: "Виконала: футер+модалка, гугл діно, футбол, вчені"
     },
     {
-        img: "/img/our-team/Artem.png",
+        img: ArtemImg,
         name: "Чеглов Артем(Scrum Master)",
         info: "Виконав: вгадай число, камінь ножиці папір, калькулятор, наша команда"
     },
     {
-        img: "/img/our-team/Kirill.png",
+        img: KirillImg,
         name: "Карайсенлі Кирило(робітник)",
         info: "Виконав: хедер+модалка, Перевір рік, калькулятор часу, введіть 3 числа"
     }
 ];
+
 
 const imgEl = document.querySelector(".our-team__img");
 const nameEl = document.querySelector(".our-team__name");
