@@ -1,17 +1,21 @@
 const teamMembers = [{
+        img: "img/our-team/Sofia.jpg",
         name: "Лисенко Софія(Team Leader)",
         info: "Виконала: футер+модалка, гугл діно, футбол, вчені"
     },
     {
+        img: "img/our-team/Artem.png",
         name: "Чеглов Артем(Scrum Master)",
         info: "Виконав: вгадай число, камінь ножиці папір, калькулятор, наша команда"
     },
     {
-        name: "Карайсенлі Кирило(просто робітник)",
+        img: "img/our-team/Kirill.png",
+        name: "Карайсенлі Кирило(робітник)",
         info: "Виконав: хедер+модалка, Перевір рік, калькулятор часу, введіть 3 числа"
     }
 ];
 
+const imgEl = document.querySelector(".our-team__img");
 const nameEl = document.querySelector(".our-team__name");
 const infoEl = document.querySelector(".our-team__info");
 const arrowLeft = document.querySelector(".our-team__arrow__left");
@@ -22,11 +26,13 @@ let currentIndex = 0;
 
 function updateTeamMember(index) {
     const member = teamMembers[index];
+    imgEl.src = member.img;
+    imgEl.alt = member.name;
     nameEl.textContent = member.name;
     infoEl.textContent = member.info;
 
-    indicators.forEach((el, i) => {
-        el.classList.toggle("active", i === index);
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle("active", i === index);
     });
 }
 

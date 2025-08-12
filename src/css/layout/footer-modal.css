@@ -6,16 +6,16 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 300ms linear;
-}
-
-.modal__footer__backdrop.active {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+    transition: opacity 300ms linear;
+}
+
+.modal__footer__backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 .modal__footer__container {
     width: 463px;
@@ -30,7 +30,7 @@
     padding: 20px;
     border: 1px solid #FFF;
 }
-.close__button {
+.footer__close__button {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -87,5 +87,10 @@
 }
 
 .change-color {
+    filter: invert(100%);
+}
+
+.change-color:hover,
+.change-color:focus {
     filter: invert(100%);
 }

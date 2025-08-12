@@ -5,20 +5,14 @@
     100% { transform: scale(1) translateY(0); }
   }
 
-.football {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .football__pitch {
     position: relative;
+    left: 185px;
     width: 720px;
     height: 220px;
     border-radius: 37px;
     border: 2px solid #000;
     background: #5ABB58;
-    margin-bottom: 36px;
     cursor: url('/img/vector.png'), auto;
     overflow: hidden;
 }

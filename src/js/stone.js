@@ -13,18 +13,18 @@ buttons.forEach((button, index) => {
         const computerChoice = choices[Math.floor(Math.random() * 3)];
 
         if (userChoice === computerChoice) {
-            result.textContent = "Нічия!";
-            result.style.color = "#000000";
+            result.textContent = `Нічия! Обидва обрали ${userChoice}`;
+            result.style.color = "var(--secondary-color)";
         } else if (
             (userChoice === "камінь" && computerChoice === "ножиці") ||
             (userChoice === "ножиці" && computerChoice === "папір") ||
             (userChoice === "папір" && computerChoice === "камінь")
         ) {
-            result.textContent = "Ви виграли раунд!";
+            result.textContent = `Ви виграли раунд! Ви обрали ${userChoice}, a комп’ютер ${computerChoice}`;
             result.style.color = "#039900";
             userScore++;
         } else {
-            result.textContent = `Комп’ютер виграв раунд!`;
+            result.textContent = `Комп’ютер виграв раунд! Ви обрали ${userChoice}, a комп’ютер ${computerChoice}`;
             result.style.color = "#990000";
             computerScore++;
         }

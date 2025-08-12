@@ -5,7 +5,7 @@ const inputEmail = document.querySelector('#footer-email')
 const style = document.createElement('style');
 openModal.addEventListener('click', onOpenModalFooter)
 closeBtn.addEventListener('click', onCloseModalFooter)
-backdrop.classList.remove('active')
+// backdrop.classList.remove('footer__active')
 
 function onEscapePressFooter(event) {
     if(event.code === 'Escape') {
@@ -53,11 +53,11 @@ function onOpenModalFooter(event) {
         inputEmail.placeholder = 'Відсутній символ @'
     } else {
         window.addEventListener('keydown', onEscapePressFooter);
-        backdrop.classList.add('active');
+        backdrop.classList.remove('is-hidden');
     }
 }
 
 function onCloseModalFooter() {
     window.removeEventListener('keydown', onEscapePressFooter)
-    backdrop.classList.remove('active')
+    backdrop.classList.add('is-hidden')
 }

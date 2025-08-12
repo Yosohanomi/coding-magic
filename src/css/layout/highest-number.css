@@ -1,21 +1,12 @@
-.highest-number {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+.form__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.highest-number__title {
-    align-items: center;
-    justify-content: center;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    color: var(--secondary-color)
- }
-
 .highest-number__form {
-      display: flex;
-      justify-content: center;
+  display: flex;
+  justify-content: center;
   width: 135px;
   height: 35px;
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
@@ -38,7 +29,7 @@ flex-direction: column;
   line-height: normal;
 }
 .highest-number__answer {
+  text-align: center;
     padding-top: 36px;
-    padding-bottom: 36px;
     color: var(--secondary-color)
 }

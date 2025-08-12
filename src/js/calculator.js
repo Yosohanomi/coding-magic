@@ -19,12 +19,12 @@ equalBtn.addEventListener("click", () => {
     const num2 = parseFloat(num2El.value);
 
     if (isNaN(num1) || isNaN(num2)) {
-        resultEl.textContent = "Будь ласка, введіть обидва числа";
+        resultEl.value = "Введіть обидва числа";
         return;
     }
 
     if (!selectedOperation) {
-        resultEl.textContent = "Оберіть дію";
+        resultEl.value = "Оберіть дію";
         return;
     }
 
@@ -41,16 +41,16 @@ equalBtn.addEventListener("click", () => {
             break;
         case "/":
             if (num2 === 0) {
-                resultEl.textContent = "Ділення на 0 неможливе";
+                resultEl.value = "Ділення на 0 неможливе";
                 return;
             }
             result = num1 / num2;
             break;
         default:
-            resultEl.textContent = "Невідома дія";
+            resultEl.value = "Невідома дія";
             return;
     }
 
     result = Math.round(result * 1000) / 1000;
-    resultEl.textContent = `Результат: ${result}`;
+    resultEl.value = result;
 });
