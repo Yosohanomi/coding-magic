@@ -1,17 +1,11 @@
-.check-year {
-}
-.check-year .container {
-}
-
 .check-year__thumb {
-  margin-bottom: 36px;
   display: flex;
- justify-content: center;
- align-items: center;
- gap: 149px;
+  justify-content: center;
+  align-items: center;
+  gap: 149px;
 }
 
- .check-year__form {
+.check-year__form {
   display: flex;
   height: 35px;
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
@@ -49,5 +43,4 @@
 .search-icon {
 width: 15px;
 height: 15px;
-
 }

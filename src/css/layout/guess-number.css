@@ -1,5 +1,4 @@
 .guess-number__thumb {
-    margin-bottom: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +22,7 @@
     color: #7e7e7e;
     font-family: 'Montserrat Alternates';
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .guess-number__btn {

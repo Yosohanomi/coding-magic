@@ -1,10 +1,3 @@
-.highest-number__title {
-    text-align: center;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    color: var(--secondary-color)
- }
-
 .form__thumb {
   display: flex;
   justify-content: center;
@@ -36,7 +29,7 @@
   line-height: normal;
 }
 .highest-number__answer {
+  text-align: center;
     padding-top: 36px;
-    padding-bottom: 36px;
     color: var(--secondary-color)
 }
