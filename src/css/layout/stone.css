@@ -9,14 +9,13 @@
     align-items: center;
 }
 
-.stone__row-wrapper {
+.stone__row {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
     padding-left: 415px;
 }
 
-.stone__row {
+.stone__row-wrapper {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -50,7 +49,6 @@
 
 .stone__result {
     text-align: center;
-    font-family: 'Montserrat Alternates';
     font-size: 12px;
     font-weight: 400;
 }
